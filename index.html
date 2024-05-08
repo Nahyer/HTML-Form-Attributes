@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="text-input">Text Input:</label><br>
+        <input type="text" id="text-input" name="text-input" placeholder="Enter text" maxlength="50" minlength="2"><br>
+
+        <label for="number-input">Number Input:</label><br>
+        <input type="number" id="number-input" name="number-input" min="1" max="100"><br>
+
+        <label for="email-input">Email Input:</label><br>
+        <input type="email" id="email-input" name="email-input" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+
+        <label for="password-input">Password Input:</label><br>
+        <input type="password" id="password-input" name="password-input" placeholder="Enter password" minlength="8"><br>
+
+        <label for="file-input">File Input:</label><br>
+        <input type="file" id="file-input" name="file-input" multiple><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
