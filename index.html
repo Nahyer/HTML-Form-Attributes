@@ -1,28 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            
+            padding: 0rem 30rem 0rem;   
+            background-color: #f1f1f1;
+            height: 100vh;
+        }
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+            width: 300px;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        input,textarea,select {
+            margin: 10px 0;
+            padding: 5px;
+            width: 100%;
+        }
+
+        .submit {
+            margin: 10px 0;
+            padding: 5px;
+            width: 100%;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+       
+    </style>
 </head>
+
 <body>
     <form>
-        <label for="text-input">Text Input:</label><br>
+        <div>
+            <h2>HTML Form Attributes</h2>
+            <label for="text-input">Name:</label><br>
         <input type="text" id="text-input" name="text-input" placeholder="Enter text" maxlength="50" minlength="2"><br>
 
-        <label for="number-input">Number Input:</label><br>
-        <input type="number" id="number-input" name="number-input" min="1" max="100"><br>
+        <label for="number-input">Phone Number:</label><br>
+        <input type="number" id="number-input" name="number-input" placeholder="Enter phone number" min="1" max="100"><br>
 
-        <label for="email-input">Email Input:</label><br>
-        <input type="email" id="email-input" name="email-input" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+        <label for="email-input">Email:</label><br>
+        <input type="email" id="email-input" name="email-input" placeholder="Enter email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
 
-        <label for="password-input">Password Input:</label><br>
+        <label for="password-input">Password:</label><br>
         <input type="password" id="password-input" name="password-input" placeholder="Enter password" minlength="8"><br>
 
         <label for="file-input">File Input:</label><br>
         <input type="file" id="file-input" name="file-input" multiple><br>
 
-        <input type="submit" value="Submit">
+        <label for="date-input">Date Input:</label><br>
+        <input type="date" id="date-input" name="date-input" min="2022-01-01" max="2022-12-31"><br>
+
+        <label for="range-input">Range Input:</label><br>
+        <input type="range" id="range-input" name="range-input" min="0" max="100" step="10" value="50"><br>
+
+        <label for="color-input">Color Input:</label><br>
+        <input type="color" id="color-input" name="color-input"><br>
+
+
+        <label for="checkbox-input">Checkbox Input:</label><br>
+        <input type="checkbox" id="checkbox-input" name="checkbox-input" value="Option1"> Option 1<br>
+
+        <label for="radio-input">Radio Input:</label><br>
+        <input type="radio" id="radio-input" name="radio-input" value="Option1"> Option 1<br>
+        <input type="radio" id="radio-input" name="radio-input" value="Option2"> Option 2<br>
+
+        <label for="select-input">Select Input:</label><br>
+        <select id="select-input" name="select-input">
+            <option value="Option1">Option 1</option>
+            <option value="Option2">Option 2</option>
+        </select><br>
+        <label for="textarea-input">Textarea Input:</label><br>
+        <textarea id="textarea-input" name="textarea-input" rows="4" cols="50"></textarea><br>
+       
+
+        <input class="submit" type="submit" value="Submit">
+    </div>
+
     </form>
 </body>
+
 </html>
